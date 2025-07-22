@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import QuizList from './components/QuizList';
 import QuestionsCard from './components/QuestionsCard';
-import './App.css';
-import './TriviaMania.css';
+import './styles/App.css';
+import './styles/TriviaMania.css';
 
 function App() {
   const [selectedQuiz, setSelectedQuiz] = useState(null);

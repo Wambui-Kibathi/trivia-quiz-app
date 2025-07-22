@@ -20,6 +20,7 @@
   margin-bottom: 2rem;
   text-align: center;
 }
+
 .quiz-list ul {
   list-style: none;
   padding: 0;
@@ -46,6 +47,7 @@
   color: #23234b;
   box-shadow: 0 0 16px #0ff, 0 0 8px #00f2fe;
 }
+
 .questions-card {
   margin-top: 1.5rem;
   background: rgba(20, 20, 40, 0.85);
