@@ -1,0 +1,109 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+.trivia-mania-app {
+  max-width: 540px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(135deg, #1a1a2e 80%, #0f3460 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 #0ff, 0 1.5px 8px 0 #222;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  color: #fff;
+  border: 2.5px solid #0ff;
+}
+
+.trivia-mania-app h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #0ff;
+  text-shadow: 0 0 8px #0ff, 0 0 16px #00f2fe;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.quiz-list ul {
+  list-style: none;
+  padding: 0;
+}
+.quiz-list li {
+  margin-bottom: 1.2rem;
+}
+.quiz-list button {
+  padding: 0.7rem 2.2rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 2px solid #0ff;
+  background: #23234b;
+  color: #0ff;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 0 8px #0ff, 0 0 2px #00f2fe;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.quiz-list button:hover {
+  background: #0ff;
+  color: #23234b;
+  box-shadow: 0 0 16px #0ff, 0 0 8px #00f2fe;
+}
+.questions-card {
+  margin-top: 1.5rem;
+  background: rgba(20, 20, 40, 0.85);
+  border-radius: 14px;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  box-shadow: 0 0 12px #0ff2, 0 0 2px #00f2fe;
+}
+.questions-card h3 {
+  color: #ff00cc;
+  text-shadow: 0 0 8px #ff00cc, 0 0 16px #0ff;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.questions-card ul {
+  list-style: none;
+  padding: 0;
+}
+.questions-card li {
+  margin-bottom: 0.7rem;
+}
+.questions-card button {
+  padding: 0.5rem 1.5rem;
+  margin-right: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid #ff00cc;
+  background: #23234b;
+  color: #ff00cc;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 0 8px #ff00cc, 0 0 2px #0ff;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.questions-card button:hover:not(:disabled) {
+  background: #ff00cc;
+  color: #23234b;
+  box-shadow: 0 0 16px #ff00cc, 0 0 8px #0ff;
+}
+.questions-card button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background: #23234b;
+  color: #888;
+  border: 2px solid #444;
+}
+.questions-card .questions-card button[style*='background: #aaffaa'] {
+  background: #0ff !important;
+  color: #23234b !important;
+  border: 2px solid #0ff !important;
+  box-shadow: 0 0 16px #0ff, 0 0 8px #00f2fe !important;
+}
+.questions-card div {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
