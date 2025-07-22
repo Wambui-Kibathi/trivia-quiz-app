@@ -2,9 +2,13 @@ import React from 'react';
 
 const quizzes = [
   { id: 1, title: 'General Knowledge' },
-  { id: 2, title: 'Science & Nature' },
-  { id: 3, title: 'Sports' },
-  { id: 4, title: 'History' },
+  { id: 2, title: 'History' },
+  { id: 3, title: 'Entertainment: Television' },
+  { id: 4, title: 'Entertainment: Video Games' },
+  { id: 5, title: 'Entertainment: Music' },
+  { id: 6, title: 'Science & Nature' },
+  { id: 7, title: 'Politics' },
+  { id: 8, title: 'Geography' },
 ];
 
 export default function QuizList({ onSelectQuiz }) {
