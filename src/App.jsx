@@ -70,3 +70,16 @@ function handleSelectQuiz(category, level, customQuestions) {
     startTimer();
     render();
 }
+
+function handleAnswer(idx) {
+    state.answers[state.current] = idx;
+    if (state.current < state.questions.length - 1) {
+        state.current++;
+        render();
+    } else {
+        stopTimer();
+        state.page = 'results';
+        render();
+    }
+}
+
