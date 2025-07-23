@@ -83,3 +83,10 @@ function handleAnswer(idx) {
     }
 }
 
+function handlePause() {
+    state.paused = true;
+    stopTimer();
+    render();
+}
+
+
