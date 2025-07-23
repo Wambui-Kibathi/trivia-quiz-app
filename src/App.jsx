@@ -89,4 +89,9 @@ function handlePause() {
     render();
 }
 
+function handleResume() {
+    state.paused = false;
+    startTimer();
+    render();
+}
 
