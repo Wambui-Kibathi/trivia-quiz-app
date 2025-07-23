@@ -39,4 +39,19 @@ function render() {
     }
 }
 
+function handleNavigate(page) {
+    if (page === 'quiz') {
+        if (!state.user) {
+            state.page = 'register';
+        } else {
+            state.page = 'quiz-list';
+        }
+    } else {
+        state.page = page;
+    }
+    render();
+}
+
+
+
 
