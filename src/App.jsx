@@ -108,3 +108,10 @@ function handlePrev() {
         render();
     }
 }
+
+function handleRestart() {
+    state.page = 'quiz-list';
+    render();
+}
+
+
