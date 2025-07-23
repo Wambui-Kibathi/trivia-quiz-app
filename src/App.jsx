@@ -22,3 +22,21 @@ let state = {
     timeLeft: 60,
     timer: null
 };
+
+function render() {
+    container.innerHTML = '';
+    container.appendChild(renderNavBar(handleNavigate));
+    if (state.page === 'register') {
+        container.appendChild(renderRegisterForm(handleRegister));
+    } else if (state.page === 'quiz-list') {
+        container.appendChild(renderQuizList(handleSelectQuiz));
+    } else if (state.page === 'quiz') {
+        renderQuizPage();
+    } else if (state.page === 'results') {
+        renderResults();
+    } else if (state.page === 'about') {
+        container.appendChild(renderAboutPage());
+    }
+}
+
+
