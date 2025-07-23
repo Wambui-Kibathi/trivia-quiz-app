@@ -101,3 +101,10 @@ function handleNext() {
         render();
     }
 }
+
+function handlePrev() {
+    if (state.current > 0) {
+        state.current--;
+        render();
+    }
+}
