@@ -58,4 +58,15 @@ function handleRegister(username) {
     render();
 }
 
-
+function handleSelectQuiz(category, level, customQuestions) {
+    state.category = category;
+    state.level = level;
+    state.questions = customQuestions || questionsData.filter(q => q.category === category && q.level === level);
+    state.current = 0;
+    state.answers = [];
+    state.page = 'quiz';
+    state.timeLeft = 60;
+    state.paused = false;
+    startTimer();
+    render();
+}
