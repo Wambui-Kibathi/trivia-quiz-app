@@ -95,3 +95,9 @@ function handleResume() {
     render();
 }
 
+function handleNext() {
+    if (state.current < state.questions.length - 1) {
+        state.current++;
+        render();
+    }
+}
