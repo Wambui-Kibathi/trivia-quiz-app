@@ -20,11 +20,25 @@ export function RegisterForm({ onRegister }) {
     };
 
     return (
-        <form>
+        <form className="register-form neon-card" onSubmit={handleSubmit}>
             <h2>Register to Play</h2>
-            <input/>
-            {error && <div>{error}</div>}
-            <button>Register</button>
+            <input
+            type="text"
+            name="username"
+            className="neon-input"
+            placeholder="Enter your name"
+            value={username}
+            onChange={handleChange}
+            required
+            />
+            {error && <div className="error-message">{error}</div>}
+            <button
+            type="submit" 
+            className="quiz-btn start-btn" 
+            style={{ marginTop: '18px' }}
+            >
+                Register
+            </button>
         </form>
     );
 }
