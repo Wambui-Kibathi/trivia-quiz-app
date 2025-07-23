@@ -18,9 +18,13 @@ export function RegisterForm({ onRegister }) {
         setUsername(e.target.value);
         if (error) setError('');
     };
-    
+
     return (
-        <>
-        </>
+        <form>
+            <h2>Register to Play</h2>
+            <input/>
+            {error && <div>{error}</div>}
+            <button>Register</button>
+        </form>
     );
 }
