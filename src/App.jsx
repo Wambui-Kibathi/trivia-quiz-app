@@ -52,6 +52,10 @@ function handleNavigate(page) {
     render();
 }
 
-
+function handleRegister(username) {
+    state.user = username;
+    state.page = 'quiz-list';
+    render();
+}
 
 
