@@ -114,4 +114,19 @@ function handleRestart() {
     render();
 }
 
+function startTimer() {
+    stopTimer();
+    state.timer = setInterval(() => {
+        if (!state.paused) {
+            state.timeLeft--;
+            if (state.timeLeft <= 0) {
+                stopTimer();
+                state.page = 'results';
+                render();
+            } else {
+                render();
+            }
+        }
+    }, 1000);
+}
 
