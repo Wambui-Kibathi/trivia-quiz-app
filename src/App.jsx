@@ -130,3 +130,10 @@ function startTimer() {
     }, 1000);
 }
 
+function stopTimer() {
+    if (state.timer) {
+        clearInterval(state.timer);
+        state.timer = null;
+    }
+}
+
