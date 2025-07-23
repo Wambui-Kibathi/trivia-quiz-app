@@ -137,3 +137,14 @@ function stopTimer() {
     }
 }
 
+function renderQuizPage() {
+    container.appendChild(renderGameControls({
+        onPause: handlePause,
+        onResume: handleResume,
+        onNext: handleNext,
+        onPrev: handlePrev,
+        isPaused: state.paused,
+        timeLeft: state.timeLeft
+    }));
+    container.appendChild(renderQuestionCard(state.questions[state.current], handleAnswer));
+}
