@@ -148,3 +148,25 @@ function renderQuizPage() {
     }));
     container.appendChild(renderQuestionCard(state.questions[state.current], handleAnswer));
 }
+
+function renderResults() {
+    const wrongAnswers = state.questions.map((q, i) => {
+        if (state.answers[i] !== q.answer) {
+            return {
+                question: q.text,
+                userAnswer: q.choices[state.answers[i]] || 'No answer',
+                correctAnswer: q.choices[q.answer]
+            };
+        }
+        return null;
+    }).filter(Boolean);
+    const score = state.questions.reduce((acc, q, i) => acc + (state.answers[i] === q.answer ? 1 : 0), 0);
+    container.appendChild(renderResultsPage({
+        score,
+        total: state.questions.length,
+        wrongAnswers,
+        onRestart: handleRestart
+    }));
+}
+
+render();
