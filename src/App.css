@@ -1,0 +1,23 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f1faee;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.main-content {
+  padding-top: 1rem;
+}
+
+.note {
+  text-align: center;
+  margin-top: 2rem;
+  color: #333;
+  font-style: italic;
+}
