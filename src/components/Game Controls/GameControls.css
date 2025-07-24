@@ -1,0 +1,40 @@
+
+.game-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d3557;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.level {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.timer {
+  font-size: 1.2rem;
+}
+
+.timer.warning {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+button {
+  background-color: #457b9d;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #2b5876;
+}
